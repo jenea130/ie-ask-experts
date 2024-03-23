@@ -73,6 +73,6 @@ Version: 0.4
     font-style: normal;
 }
 
-.wrapper::before {
+/* .wrapper::before {
     background: url("assets/i/svg/fon-contact-1.svg") no-repeat;
-}
+} */

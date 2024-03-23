@@ -27,8 +27,8 @@ window.addEventListener("DOMContentLoaded", function () {
         filterItems();
     }
 
-    // if (mainMenu) {
-    // toggleMenu();
-    // }
+    if (mainMenu) {
+    toggleMenu();
+    }
 
 });
