@@ -10,35 +10,36 @@ Version: 0.4
 */
 
 @font-face {
-	font-family: 'Lato';
-	src: 
-		url('assets/fonts/Lato-Regular.woff2') format('woff2'),
-		url('assets/fonts/Lato-Regular.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Lato';
+    src:
+        url('assets/fonts/Lato-Regular.woff2') format('woff2'),
+        url('assets/fonts/Lato-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-	font-family: 'Lato';
-	src: 
-		url('assets/fonts/Lato-Bold.woff2') format('woff2'),
-		url('assets/fonts/Lato-Bold.woff') format('woff');
-	font-weight: 700;
-	font-style: normal;
+    font-family: 'Lato';
+    src:
+        url('assets/fonts/Lato-Bold.woff2') format('woff2'),
+        url('assets/fonts/Lato-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
 }
+
 @font-face {
-	font-family: 'Lato';
-	src: 
-		url('assets/fonts/Lato-Semibold.woff2') format('woff2'),
-		url('assets/fonts/Lato-Semibold.woff') format('woff');
-	font-weight: 600;
-	font-style: normal;
+    font-family: 'Lato';
+    src:
+        url('assets/fonts/Lato-Semibold.woff2') format('woff2'),
+        url('assets/fonts/Lato-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
 }
 
 
 @font-face {
     font-family: 'Cabin';
-    src: 
+    src:
         url('assets/fonts/Cabin-SemiBold.woff2') format('woff2'),
         url('assets/fonts/Cabin-SemiBold.woff') format('woff');
     font-weight: 600;
@@ -47,7 +48,7 @@ Version: 0.4
 
 @font-face {
     font-family: 'Cabin';
-    src: 
+    src:
         url('assets/fonts/Cabin-Bold.woff2') format('woff2'),
         url('assets/fonts/Cabin-Bold.woff') format('woff');
     font-weight: bold;
@@ -57,7 +58,7 @@ Version: 0.4
 
 @font-face {
     font-family: 'Cabin';
-    src: 
+    src:
         url('assets/fonts/Cabin-Regular.woff2') format('woff2'),
         url('assets/fonts/Cabin-Regular.woff') format('woff');
     font-weight: normal;
@@ -66,7 +67,7 @@ Version: 0.4
 
 @font-face {
     font-family: 'Cabin';
-    src: 
+    src:
         url('assets/fonts/Cabin-Medium.woff2') format('woff2'),
         url('assets/fonts/Cabin-Medium.woff') format('woff');
     font-weight: 500;
@@ -76,3 +77,10 @@ Version: 0.4
 /* .wrapper::before {
     background: url("assets/i/svg/fon-contact-1.svg") no-repeat;
 } */
+
+.home-intro::before {
+    background: url("assets/i/svg/fon-top.svg") no-repeat left 52% top 10%;
+}
+.home-intro::after {
+    background: url("assets/i/svg/fon-bottom.svg") no-repeat left bottom;
+}
