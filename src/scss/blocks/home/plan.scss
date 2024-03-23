@@ -1,0 +1,74 @@
+.plan {
+  padding: 13.3rem 0 30.8rem;
+  background: #f5f5f5;
+  @media screen and (max-width: 992px) {
+    padding-bottom: 14rem;
+  }
+  @media screen and (max-width: 576px) {
+    padding-bottom: 10rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -2rem;
+    @media screen and (max-width: 992px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  &__col {
+    flex: 0 0 calc(100% / 3 - 4rem);
+    margin: 0 2rem;
+    min-width: 38.7rem;
+  }
+  &__col:first-of-type {
+    margin-bottom: 3rem;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 100%;
+      padding: 0 2rem;
+    }
+  }
+
+  &__label {
+    margin-bottom: 1.5rem;
+    color: #fff;
+    background: var(--contrast);
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+  &__text {
+    margin-bottom: 1.5rem;
+  }
+  &__flex {
+    display: flex;
+    align-items: center;
+    column-gap: 2rem;
+  }
+  &__item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1.4rem 1.6rem;
+    border-radius: 5.5rem;
+    background: #fff;
+    cursor: pointer;
+    &.active .plan__circle {
+        background: var(--contrast);
+        border: 1px solid var(--contrast);
+    }
+  }
+  &__circle {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    border: 1px solid #d8d8d8;
+  }
+  &__tarif {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    color: #595566;
+  }
+}

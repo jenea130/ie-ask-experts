@@ -1,0 +1,112 @@
+.projections {
+  padding: 14.8rem 0 15rem;
+  margin-bottom: 8.4rem;
+  background: #f5f5f5;
+  @media screen and (max-width: 992px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 8rem 0;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 7rem;
+    @media screen and (max-width: 576px) {
+        display: block;
+        margin-bottom: 4rem;
+    }
+  }
+  &__content {
+    max-width: 54%;
+    @media screen and (max-width: 576px) {
+    margin-bottom: 4rem;
+    max-width: initial;
+    }
+  }
+  &__logo {
+    margin-bottom: 1.3rem;
+    svg {
+      height: 7.1rem;
+    }
+  }
+  &__title {
+    margin-bottom: 1.3rem;
+  }
+  &__arrows {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3rem;
+  }
+  &__arrow {
+    width: 7rem;
+    height: 7rem;
+    background: #000;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    &:hover {
+      background: #ffc32b;
+    }
+    &:hover svg {
+      stroke: #141414;
+    }
+    svg {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      stroke: white;
+      transition: all 0.3s ease;
+    }
+  }
+  &__wrapper {
+    display: flex;
+  }
+
+  .slick-list {
+    margin: 0 -2.1rem;
+  }
+
+  .slick-slide {
+    margin: 0 2.1rem;
+  }
+  &__item {
+    padding: 4.4rem 3.5rem;
+    // width: 345px;
+    border-radius: 2rem;
+    background: #ebebeb;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+      background: var(--text-dark);
+    }
+    &:hover .projections__subtitle {
+      color: #fff;
+    }
+    &:hover .projections__desc {
+      color: #fff;
+    }
+    &:hover .projections__icon svg {
+      fill: var(--accent);
+    }
+  }
+  &__icon {
+    margin-bottom: 1.8rem;
+    svg {
+      fill: var(--text-dark);
+      transition: all 1s ease;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+  }
+  &__desc {
+    transition: all 0.3s ease;
+  }
+}

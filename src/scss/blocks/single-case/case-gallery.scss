@@ -1,0 +1,61 @@
+.case-gallery {
+  margin-bottom: 15rem;
+  text-align: center;
+  @media screen and (max-width: 992px) {
+    margin-bottom: 12rem;
+  }
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10rem;
+  }
+  @media screen and (max-width: 576px) {
+    margin-bottom: 8rem;
+  }
+  &__title {
+    margin-bottom: 4.1rem;
+    text-align: center;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 2.4rem;
+    margin: 0 -1.2rem 5rem;
+    padding: 4.1rem 2.5rem;
+    background: #d9d9d9;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+    @media screen and (max-width: 576px) {
+        padding: 3rem 1rem;
+    }
+  }
+  &__img {
+    position: relative;
+    flex: 0 0 calc(100% / 3 - 2.4rem);
+    margin: 0 1.2rem;
+    height: 34.4rem;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 calc(100% / 2 - 2.4rem);
+    }
+    @media screen and (max-width: 768px) {
+      height: auto;
+    }
+  }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+    @media screen and (max-width: 768px) {
+      position: static;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .case-gallery__img:not(:last-of-type) {
+    margin-bottom: 2.4rem;
+  }
+}

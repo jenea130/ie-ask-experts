@@ -1,0 +1,105 @@
+.services {
+  padding: 15rem 0;
+  background: #f5f5f5;
+  @media screen and (max-width: 992px) {
+    padding: 8rem 0;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__label {
+    margin-bottom: 0.8rem;
+    color: #fff;
+    background: var(--contrast);
+  }
+  &__title {
+    margin-bottom: 5.2rem;
+    max-width: 78.1rem;
+    text-align: center;
+  }
+  &__body {
+    position: relative;
+  }
+  &__arrow {
+    position: absolute;
+    top: 20rem;
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    background: #fff;
+    z-index: 100;
+    cursor: pointer;
+    &:hover {
+      background: #181818;
+    }
+    &:hover svg {
+      fill: #fff;
+    }
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 20px;
+    }
+  }
+  &__arrow--prev {
+    left: -3.6rem;
+  }
+  &__arrow--next {
+    right: -3.6rem;
+  }
+  
+  &__wrapper {
+    display: flex;
+  }
+  .slick-list {
+    margin: 0 -1.5rem;
+  }
+
+  .slick-slide {
+    margin: 0 1.5rem;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    padding: 2.2rem 2.2rem 3.4rem 2.2rem;
+    background: #ebebeb;
+    border-radius: 2rem;
+  }
+  &__img {
+    position: relative;
+    height: 25.3rem;
+    border-radius: 2rem;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+    padding: 2.9rem 1.5rem 0 2.5rem;
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+  }
+  &__text {
+    margin-bottom: 2.6rem;
+  }
+  &__btn {
+    display: block;
+    padding: 1.1rem 3.6rem;
+    margin-top: auto;
+    background: #fff;
+  }
+}

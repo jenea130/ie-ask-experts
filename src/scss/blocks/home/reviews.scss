@@ -1,0 +1,111 @@
+.reviews {
+  margin-bottom: 15rem;
+  &__wrapper {
+    display: flex;
+    margin-bottom: 0.2rem;
+  }
+  .slick-list {
+    margin: 0 -2.1rem;
+  }
+
+  .slick-slide {
+    margin: 0 2.1rem;
+  }
+  &__item {
+    padding: 4.3rem 2.9rem;
+    background: #f2f2f2;
+    border-radius: 2rem;
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    column-gap: 1.3rem;
+    margin-bottom: 1.7rem;
+  }
+  &__ava {
+    img {
+      border-radius: 50%;
+    }
+  }
+  &__name {
+    margin-bottom: 0.7rem;
+    font-family: var(--font-2);
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.16;
+    color: var(--text-dark);
+  }
+  &__label {
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.475;
+    letter-spacing: normal;
+    // text-align: center;
+    color: #fff;
+    text-transform: none;
+    background: var(--contrast);
+  }
+  &__text {
+    position: relative;
+    padding: 3rem;
+    background: #fff;
+    border-radius: 2rem;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -3.1rem;
+      left: 74.2%;
+      width: 6.6rem;
+      height: 6.6rem;
+      background: url("../i/svg/icon-cite.svg") no-repeat;
+      z-index: 2;
+    }
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 20rem;
+    background: #f3f3f3;
+    transition: all .8s ;
+    cursor: pointer;
+    span {
+      padding: 1rem;
+      font-weight: 600;
+      font-size: 1.8rem;
+      line-height: 1.6;
+      color: #353535;
+    }
+    &:hover .reviews__arrow, 
+    &:hover .reviews__arrow svg {
+      background: #ffc32b;
+      fill: #181818;
+    }
+  }
+  &__box--right {
+    flex-direction: row-reverse;
+  }
+  &__arrow {
+    position: relative;
+    width: 4.3rem;
+    height: 4.3rem;
+    border-radius: 50%;
+    background: #000;
+    cursor: pointer;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2rem;
+      height: 1.6rem;
+      fill: #fff;
+    }
+  }
+}

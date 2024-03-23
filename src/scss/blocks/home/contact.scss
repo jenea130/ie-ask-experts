@@ -1,0 +1,98 @@
+.wrapper {
+  position: relative;
+  left: -3.4rem;
+  margin-bottom: 6.9rem;
+  @media screen and (max-width: 992px) {
+    left: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8rem;
+    left: -4rem;
+    width: 27rem;
+    height: 27rem;
+    background: url("../i/svg/fon-contact-1.svg") no-repeat;
+    z-index: 1;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+}
+.contact {
+  position: relative;
+  margin-top: -17rem;
+  background: #181818;
+  border-radius: 3rem;
+  overflow: hidden;
+  z-index: 2;
+  @media screen and (max-width: 992px) {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0;
+  }
+  &.contact--team {
+    margin-top: 0;
+    margin-bottom: 15rem;
+  }
+  &__img {
+    position: relative;
+    padding-bottom: 34%;
+    clip-path: polygon(56.08% 0%, 100% 0%, 100% 100%, 57% 100%, 49% 22%);
+    @media screen and (max-width: 992px) {
+      clip-path: none;
+      padding-bottom: 0;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      object-position: 100% 100%;
+      @media screen and (max-width: 992px) {
+        position: static;
+      }
+    }
+  }
+  &__content {
+    position: absolute;
+    top: 8rem;
+    left: 10rem;
+    z-index: 2;
+    @media screen and (max-width: 992px) {
+      position: static;
+      padding: 6rem 4rem;
+    }
+  }
+  &__wrap {
+    width: 40%;
+    @media screen and (max-width: 992px) {
+      width: 100%;
+    }
+  }
+  &__label {
+    margin-bottom: 1.2rem;
+    color: #fff;
+    background: #323232;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 3.2rem;
+    }
+  }
+  &__title {
+    margin-bottom: 0.6rem;
+    color: #fff;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 3.2rem;
+    }
+  }
+  &__text {
+    margin-bottom: 2rem;
+    color: #fff;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 6.4rem;
+    }
+  }
+}

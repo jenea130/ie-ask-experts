@@ -1,0 +1,39 @@
+.top-header {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #fff;
+  background: var(--text-dark);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 5.8rem;
+  }
+  &__days,
+  &__location {
+    display: flex;
+    align-items: center;
+    column-gap: 0.9rem;
+  }
+  &__days {
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    column-gap: 2.4rem;
+    @media screen and (max-width: 576px) {
+    column-gap: 1.8rem;
+    }
+  }
+  &__link {
+    fill: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+    &:hover {
+      fill: var(--accent);
+    }
+  }
+}

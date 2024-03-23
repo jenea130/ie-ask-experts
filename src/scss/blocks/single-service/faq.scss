@@ -1,0 +1,25 @@
+.faq {
+  background: #f5f5f5;
+  padding: 15.1rem 0;
+  @media screen and (max-width: 992px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 8rem 0;
+  }
+  &__header {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .label {
+    margin-bottom: 2.2rem;
+    color: #fff;
+    background: var(--contrast);
+  }
+  &__accordion {
+    margin: 0 auto;
+  }
+}

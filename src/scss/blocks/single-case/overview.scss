@@ -1,0 +1,63 @@
+.overview {
+    margin: 0 auto 15rem;
+    max-width: 79.2rem;
+    @media screen and (max-width: 992px) {
+        margin-bottom: 12rem;
+    }
+    @media screen and (max-width: 768px) {
+        margin-bottom: 10rem;
+    }
+    @media screen and (max-width: 576px) {
+        margin-bottom: 8rem;
+    }
+  &__title {
+    margin-bottom: 1.5rem;
+  }
+  &__list {
+    margin-top: 4rem;
+    margin-bottom: 6.4rem;
+    padding-left: 2rem;
+    list-style: initial;
+  }
+  &__item {
+    margin-bottom: 1.6rem;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.16;
+    color: #595566;
+  }
+  &__text {
+    p:not(:last-of-type) {
+      margin-bottom: 2.6rem;
+    }
+  }
+  &__item:last-of-type {
+    margin-bottom: 0;
+  }
+  &__subtitle {
+    margin-bottom: 2.6rem;
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.16;
+    color: #1c1c1c;
+  }
+  &__img {
+    position: relative;
+    margin-top: 2.9rem;
+    margin-bottom: 2.9rem;
+    height: 36.5rem;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      margin: 0 auto;
+      right: 0;
+      width: 90%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

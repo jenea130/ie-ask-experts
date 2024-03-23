@@ -1,0 +1,96 @@
+.card-plan {
+  padding: 2.2rem 2.2rem 4.2rem;
+  border-radius: 2.1rem;
+  background: #fff;
+  &__body {
+    position: relative;
+    padding: 3.3rem 3rem 2.6rem;
+    border-radius: 2.1rem;
+    background: #303030;
+    overflow: hidden;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 7%;
+      width: 9.8rem;
+      height: 9.8rem;
+      background: url("../i/svg/fon-plan.svg") no-repeat;
+      @media screen and (max-width: 1200px) {
+        top: -7%;
+      }
+    }
+    &:hover .card-plan__label {
+      background: var(--contrast);
+    }
+  }
+  &__subtitle {
+    margin-bottom: 0.9rem;
+    color: #fff;
+  }
+  &__desc {
+    margin-bottom: 1rem;
+    color: #fff;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding-top: 2.8rem;
+    border-top: 1px dashed #565656;
+  }
+  &__price {
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 1.16;
+    color: #fff;
+    span {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  &__label {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.475;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #fff;
+    background: #3e3e3e;
+    span {
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  &__list {
+    padding: 3.6rem 2.8rem 3.8rem;
+    li {
+      display: flex;
+      align-items: center;
+      column-gap: 1.2rem;
+      span {
+        font-family: "Lato", sans-serif;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2.6;
+        color: #595566;
+      }
+    }
+  }
+  &__btn {
+    padding: 1.6rem 3.2rem;
+    width: 100%;
+    border: 1px solid #d6d6d6;
+    &:hover {
+      color: var(--text-dark);
+      background: var(--accent);
+      border: 1px solid var(--accent);
+    }
+  }
+}

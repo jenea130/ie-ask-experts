@@ -1,8 +1,31 @@
-import "../vue/vue-app.js";
-import fixedHeader from "./modules/header/fixed-header";
-import {mainMenu} from "./modules/menu";
+import toggleMenu from "./modules/header/toggleMenu";
+import togglePrice from "./modules/togglePrice";
+import videoPlay from "./modules/video/videoPlay";
+import accordionItems from "./modules/accordion/accordionItems";
+import filterItems from "./modules/filter/filterItems";
 
-document.addEventListener("DOMContentLoaded", function () {
-    mainMenu();
-    fixedHeader();
+window.addEventListener("DOMContentLoaded", function () {
+    const plan = document.querySelector(".plan") 
+    const video = document.querySelector(".video")
+    const accordion = document.querySelector(".accordion")
+    const filter = document.querySelector(".taxes")
+
+    if (plan) {
+        togglePrice();
+    }
+
+    if (video) {
+        videoPlay();
+    }
+
+    if (accordion) {
+        accordionItems();
+    }
+
+    if (filter) {
+        filterItems();
+    }
+
+    toggleMenu();
+
 });

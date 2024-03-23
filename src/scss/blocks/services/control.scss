@@ -1,0 +1,76 @@
+.control {
+  padding: 17rem 0;
+  background: #f5f5f5;
+  @media screen and (max-width: 768px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 8rem 0;
+  }
+  &__content {
+    margin-bottom: 3.8rem;
+    text-align: center;
+  }
+  .label {
+    margin-bottom: 0.8rem;
+    color: #fff;
+    background: var(--contrast);
+  }
+  &__title {
+    margin: 0 auto;
+    max-width: 60%;
+    @media screen and (max-width: 576px) {
+      max-width: 80%;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    margin: 0 -1rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+    }
+  }
+  &__card {
+    flex: 0 0 calc(100% / 3 - 2rem);
+    margin: 0 1rem;
+    max-width: 38.7rem;
+    background: #ebebeb;
+    border-radius: 2rem;
+    transition: all .3s ease;
+    @media screen and (max-width: 992px) {
+      flex: 0 0 calc(100% / 2 - 2rem);
+    }
+    @media screen and (max-width: 576px) {
+      margin: 0 auto 2rem;
+      display: block;
+    }
+    &:hover {
+      background: var(--text-dark);
+      .control__subtitle,
+      .control__text {
+        color: #fff;
+      }
+    }
+  } 
+  &__item {
+    padding: 4.9rem 0;
+  }
+  &__icon {
+    padding: 0 3.1rem;
+    margin-bottom: 1.9rem;
+    height: 9.8rem;
+  }
+  &__body {
+    padding: 0 4.7rem;
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+  }
+  &__text {
+    transition: color 0.3s ease;
+  }
+}

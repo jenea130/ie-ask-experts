@@ -1,0 +1,30 @@
+.brands-light {
+  margin-bottom: 1.8rem;
+  padding: 3rem 3rem;
+  height: 23.7rem;
+  background: #fff;
+  opacity: 0.51;
+  @media screen and (max-width: 1200px) {
+    height: auto;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 6rem;
+    gap: 4rem 6rem;
+    height: 100%;
+  }
+  // &__logo {
+  //   svg {
+  //     stroke: #030211;
+  //     path {
+  //       fill: #030211;
+  //     }
+  //     ellipse {
+  //       fill: #030211;
+  //     }
+  //   }
+  // }
+}

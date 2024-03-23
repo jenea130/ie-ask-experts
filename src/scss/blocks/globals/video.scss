@@ -1,0 +1,115 @@
+.video {
+  position: relative;
+  height: 36.9rem;
+  border-radius: 2.8rem;
+  overflow: hidden;
+  &--dark {
+    height: 31.9rem;
+  }
+  @media screen and (max-width: 576px) {
+    border-radius: 2rem;
+  }
+  &.active {
+    &::before {
+      // opacity: 0;
+      pointer-events: none;
+      transform: translateY(-500px);
+    }
+    .video__play {
+      // transform: translateY(-600px);
+      transform: translateX(-1000px);
+    }
+    .video__img {
+      // transform: translateY(700px);
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(24, 24, 24, 0.4);
+    z-index: 3;
+    transition: all 0.4s;
+    transition-delay: 0.6s;
+  }
+
+  &__iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
+    transition: all 0.8s;
+    transition-delay: 1.2s;
+  }
+
+  &__play {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 109px;
+    height: 109px;
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    z-index: 4;
+    transition: all 0.8s;
+    cursor: pointer;
+    &:hover .video__circle {
+      background: var(--accent);
+      opacity: 0.7;
+    }
+  }
+  &__back {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 87px;
+    height: 87px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.17);
+  }
+
+  &__circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 67px;
+    height: 67px;
+    border-radius: 50%;
+    background: #fff;
+    transition: all 0.5s ease;
+  }
+  &__triangle {
+    position: relative;
+    top: 2px;
+    left: 4px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 9px 0 9px 15px;
+    border-color: transparent transparent transparent #181818;
+  }
+}

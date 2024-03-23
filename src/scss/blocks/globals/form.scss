@@ -1,0 +1,55 @@
+.form {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2.4rem;
+    margin-bottom: 2.8rem;
+    @media screen and (max-width: 576px) {
+        display: block;
+        margin-bottom: 0;
+    }
+  }
+  &__wrap .form__group {
+    flex: 1;
+  }
+  &__group {
+    .form__label {
+      display: block;
+      margin-bottom: 0.8rem;
+      font-family: var(--font-1);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.475;
+      color: var(--text-dark);
+    }
+  }
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  textarea {
+    padding: 2rem 3.3rem 2rem 0;
+    width: 100%;
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.475;
+    text-indent: 3.3rem;
+    color: #a9a9a9;
+    border: 1px solid #c1c1c1;
+    border-radius: 5.4rem;
+    @media screen and (max-width: 576px) {
+        margin-bottom: 3rem;
+    }
+  }
+  textarea {
+    padding: 2rem 3.3rem;
+    text-indent: 0;
+    border: 1px solid #c1c1c1;
+    border-radius: 2.2rem;
+    height: 15.7rem;
+  }
+  &__btn {
+    margin-top: 2.8rem;
+    padding: 1.3rem 2.5rem;
+  }
+}

@@ -1,13 +1,96 @@
-@import "partials/mixins";
+// @import "partials/fonts";
 @import "partials/variables";
-@import "partials/normalize";
+@import "partials/mixins";
 @import "partials/base";
-@import "partials/scrollbar";
-@import "blocks/main-header";
-@import "blocks/header/main-menu";
-@import "blocks/header/sandwitch.scss";
-@import "blocks/main-footer";
-@import "blocks/privacy-policy.scss";
-@import "blocks/globals/language";
-@import "blocks/blog/single-blog-styles";
+@import "../../assets/libs/slick.scss";
+@import "../../assets/libs/roundslider.min.css";
+
+// globals
+@import "blocks/globals/top-header";
+@import "blocks/globals/main-header";
+@import "blocks/globals/sandwich";
+@import "blocks/globals/main-menu";
+@import "blocks/globals/main-footer";
+@import "blocks/globals/footer";
+@import "blocks/globals/footer-copyright";
+@import "blocks/globals/btn";
+@import "blocks/globals/btn-icon";
+@import "blocks/globals/label";
+@import "blocks/globals/title";
+@import "blocks/globals/subtitle";
+@import "blocks/globals/text";
+@import "blocks/globals/form";
+@import "blocks/globals/form-small";
+@import "blocks/globals/page-intro";
+@import "blocks/globals/video";
+
+// blocks
 @import "blocks/home/home-intro";
+@import "blocks/home/features";
+@import "blocks/home/about-me";
+@import "blocks/home/services";
+@import "blocks/home/experience";
+@import "blocks/home/work";
+@import "blocks/home/education";
+@import "blocks/home/counter";
+@import "blocks/home/reviews";
+@import "blocks/home/team";
+@import "blocks/home/brands";
+@import "blocks/home/plan";
+@import "blocks/home/card-plan";
+@import "blocks/home/contact";
+
+// about
+@import "blocks/about/vision";
+@import "blocks/about/our-core";
+@import "blocks/about/history";
+@import "blocks/about/our-team";
+@import "blocks/about/book";
+
+// services
+@import "blocks/services/control";
+@import "blocks/services/process";
+@import "blocks/services/pricing";
+@import "blocks/services/contact-us";
+
+// single-service
+@import "blocks/single-service/projections";
+@import "blocks/single-service/expect";
+@import "blocks/single-service/brands-light";
+@import "blocks/single-service/our-history";
+@import "blocks/single-service/gallery";
+@import "blocks/single-service/faq";
+@import "blocks/single-service/accordion";
+
+// team
+@import "blocks/team/great-team";
+
+// single-team
+@import "blocks/single-team/member";
+@import "blocks/single-team/subscribe";
+
+// case-studies
+@import "blocks/case-studies/taxes";
+
+// single-case-studies
+@import "blocks/single-case/preview";
+@import "blocks/single-case/overview";
+@import "blocks/single-case/case-gallery";
+
+// blog
+@import "blocks/blog/articles";
+
+// single-blog
+@import "blocks/single-blog/consulting";
+
+// contact
+@import "blocks/contact/talk";
+
+// licenses
+@import "blocks/licenses/all-licenses";
+
+// protection
+@import "blocks/protection/password";
+
+// 404
+@import "blocks/404/not-found";

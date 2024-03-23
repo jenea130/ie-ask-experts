@@ -1,0 +1,114 @@
+.process {
+  padding: 15.1rem 0 14.4rem;
+  @media screen and (max-width: 992px) {
+    
+  padding: 12rem 0 12rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10rem 0;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 2.3rem;
+    @media screen and (max-width: 992px) {
+        display: block;
+    }
+  }
+  &__picture {
+    position: relative;
+    flex: 0 0 60%;
+    @media screen and (max-width: 992px) {
+        margin-bottom: 12rem;
+    }
+    @media screen and (max-width: 576px) {
+        margin-bottom: 7rem;
+    }
+  }
+  &__dotted {
+    position: absolute;
+    bottom: 8.1%;
+    left: -11.5%;
+    z-index: 1;
+    @media screen and (max-width: 992px) {
+        left: 0;
+        top: 0;
+    }
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+  }
+  &__square {
+    position: absolute;
+    top: 9.3%;
+    right: 8.4%;
+    width: 18.3rem;
+    height: 16.4rem;
+    background: var(--contrast);
+    border-radius: 2rem;
+    z-index: 2;
+    @media screen and (max-width: 992px) {
+        right: 0;
+    }
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+  }
+  &__img {
+    position: relative;
+    height: 39.6rem;
+    img {
+      position: absolute;
+      top: 23%;
+      left: 0;
+      width: 88%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2.8rem;
+      z-index: 3;
+      @media screen and (max-width: 992px) {
+        top: 14%;
+        left: 7%;
+      }
+      @media screen and (max-width: 576px) {
+        position: static;
+        width: 100%;
+      }
+    }
+  }
+  &__content {
+    height: 59rem;
+    @media screen and (max-width: 992px) {
+        height: auto;
+    }
+  }
+  .label {
+    margin-bottom: 2.1rem;
+  }
+  &__title {
+    margin-bottom: 4rem;
+  }
+  &__item {
+    display: flex;
+    column-gap: 1.8rem;
+    margin-bottom: 4.3rem;
+  }
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+  &__icon {
+    svg {
+      height: 3rem;
+    }
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+  }
+  &__subtitle {
+    font-family: var(--font-2);
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 1.16;
+    color: var(--text-dark);
+  }
+}

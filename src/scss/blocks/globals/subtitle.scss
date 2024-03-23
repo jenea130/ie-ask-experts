@@ -1,0 +1,10 @@
+.subtitle {
+  font-family: var(--font-2);
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.16;
+  color: var(--text-dark);
+  &--light {
+    color: #fff;
+  }
+}

@@ -1,0 +1,43 @@
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  padding: 2.4rem 0;
+  font-family: var(--font-1);
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1;
+  color: #595566;
+  @media screen and (max-width: 576px) {
+    display: block;
+    text-align: center;
+  }
+
+  &__col {
+    @media screen and (max-width: 576px) {
+        margin-bottom: 1rem;
+    }
+    a {
+      display: inline-block;
+      font-family: var(--font-1);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: #595566;
+      transition: all 0.3s ease;
+      &:hover {
+        text-decoration: underline;
+        color: var(--text-dark);
+      }
+    }
+  }
+  &__col:not(:last-of-type) {
+    padding-right: 1rem;
+    border-right: 1px solid #595566;
+    @media screen and (max-width: 576px) {
+        border: none;
+    }
+  }
+  &__col:not(:first-of-type) {
+    padding-left: 1rem;
+  }
+}

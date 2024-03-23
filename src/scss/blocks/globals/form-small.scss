@@ -1,0 +1,50 @@
+.form-small {
+  &__group {
+    display: flex;
+    align-items: center;
+    column-gap: 2.8rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+      width: 100%;
+    }
+  }
+  input {
+    display: block;
+    padding: 2.2rem 2rem;
+    font-family: var(--font-1);
+    font-weight: 400;
+    font-size: 1.6rem;
+    text-indent: 1.3rem;
+    color: var(--text-dark);
+    width: 100%;
+    max-width: 30rem;
+    border: none;
+    outline: none;
+    border-radius: 5.4rem;
+    @media screen and (max-width: 576px) {
+      max-width: initial;
+      margin-bottom: 1.6rem;
+      text-align: center;
+    }
+    &::placeholder {
+      font-family: var(--font-1);
+      font-weight: 400;
+      font-size: 1.6rem;
+      line-height: 1.475;
+      color: #a9a9a9;
+    }
+  }
+  button {
+    padding: 1.6rem 2.7rem;
+    border-radius: 4.7rem;
+    cursor: pointer;
+    @media screen and (max-width: 576px) {
+      display: block;
+      width: 100%;
+    }
+    &:hover {
+      color: var(--text-dark);
+      background: var(--accent);
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.main-header {
+  background: rgba(27, 27, 27, 0.9);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 14rem;
+    @media screen and (max-width: 992px) {
+      height: 12rem;
+    }
+    @media screen and (max-width: 576px) {
+      height: 8rem;
+    }
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    column-gap: 1.1rem;
+    @media screen and (max-width: 992px) {
+      margin-right: auto;
+    }
+  }
+  &__btn--icon {
+    @media screen and (max-width: 992px) {
+      margin-right: 2rem;
+    }
+    @media screen and (max-width: 576px) {
+      margin-right: 1rem;
+      padding: 0;
+      border-radius: 50%;
+    }
+    & span {
+      @media screen and (max-width: 576px) {
+        display: none;
+      }
+    }
+  }
+  .btn-icon {
+    @media screen and (max-width: 992px) {
+      margin-right: 1rem;
+    }
+  }
+}

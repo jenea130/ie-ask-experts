@@ -1,0 +1,105 @@
+.education {
+  padding: 14.7rem 0 9rem;
+  text-align: center;
+  background: #f5f5f5;
+  @media screen and (max-width: 992px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 10rem 0;
+  }
+  @media screen and (max-width: 576px) {
+    padding: 7rem 0;
+  }
+  &__label {
+    margin-bottom: 1rem;
+  }
+  &__title {
+    margin-bottom: 1.6rem;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 5rem;
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+    }
+  }
+  &__col {
+    max-width: 54rem;
+    text-align: left;
+  }
+  &__col--right {
+    text-align: right;
+    @media screen and (max-width: 768px) {
+      align-self: right;
+      margin-left: auto;
+    }
+  }
+  &__label--left,
+  &__label--right {
+    margin-bottom: 3.9rem;
+  }
+  &__label--right {
+    background: var(--contrast);
+  }
+  &__item {
+    margin-bottom: 6.2rem;
+    @media screen and (max-width: 576px) {
+      margin-bottom: 4.2rem;
+    }
+  }
+  &__item--left {
+    position: relative;
+    padding-left: 6rem;
+    background-image: linear-gradient(to bottom, #fff 50%, #181818 50%);
+    background-size: 2px 6px;
+    background-repeat: repeat-y;
+    background-position: 15px 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 33px;
+      height: 33px;
+      background: url("../i/svg/icon-circle-left.svg") no-repeat;
+    }
+  }
+  &__item--right {
+    position: relative;
+    padding-right: 6rem;
+    background-image: linear-gradient(to bottom, #fff 50%, #181818 50%);
+    background-size: 2px 6px;
+    background-repeat: repeat-y;
+    background-position: 97% 0;
+    @media screen and (max-width: 1200px) {
+      background-position: 97% 0;
+    }
+    @media screen and (max-width: 576px) {
+      background-position: 96.5% 0;
+    }
+    @media screen and (max-width: 450px) {
+      background-position: 96% 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 33px;
+      height: 33px;
+      background: url("../i/svg/icon-circle-right.svg") no-repeat;
+    }
+  }
+  &__desc {
+    margin-bottom: 0.1rem;
+    font-size: 1.8rem;
+    line-height: 1.48;
+    color: #8a8a8a;
+  }
+  &__subtitle {
+    margin-bottom: 2rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,84 @@
+.history {
+  padding: 15rem 0 12.6rem;
+  text-align: center;
+  @media screen and (max-width: 992px) {
+    padding: 12rem 0;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 9rem 0;
+  }
+  .label {
+    margin-bottom: 2.2rem;
+    color: #fff;
+    background: var(--contrast);
+  }
+  &__title {
+    margin: 0 auto 1.5rem;
+    max-width: 46%;
+    @media screen and (max-width: 768px) {
+      max-width: 60%;
+    }
+    @media screen and (max-width: 576px) {
+    max-width: 77%;
+    }
+  }
+  &__text {
+    margin: 0 auto 1.5rem;
+    max-width: 60%;
+    @media screen and (max-width: 768px) {
+      max-width: 80%;
+      margin-bottom: 3rem;
+    }
+    @media screen and (max-width: 576px) {
+      max-width: 90%;
+    }
+  }
+  &__block {
+    position: relative;
+    height: 45rem;
+    max-width: 90%;
+    @media screen and (max-width: 576px) {
+      height: auto;
+      max-width: initial;
+    }
+  }
+  &__dotted {
+    position: absolute;
+    top: -0.6rem;
+    right: -5rem;
+    z-index: 1;
+    @media screen and (max-width: 992px) {
+      right: -5rem;
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  &__square {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 6.7rem;
+    width: 16.8rem;
+    height: 18.3rem;
+    background: var(--contrast);
+    border-radius: 20px;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+      left: 4rem;
+    }
+    @media screen and (max-width: 576px) {
+      display: none;
+    }
+  }
+  &__video {
+    position: relative;
+    top: 6%;
+    left: 10%;
+    width: 89%;
+    z-index: 2;
+    @media screen and (max-width: 576px) {
+      width: 100%;
+      left: 0;
+    }
+  }
+}

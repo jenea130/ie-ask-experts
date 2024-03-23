@@ -1,0 +1,213 @@
+.consulting {
+  margin-top: 4.3rem;
+  margin-bottom: 16.6rem;
+  @media screen and (max-width: 768px) {
+    margin-bottom: 10rem;
+  }
+  &__block {
+    max-width: 79%;
+  }
+  &__block:first-child {
+    margin-bottom: 3.5rem;
+  }
+  &__block:nth-child(3) {
+    margin-bottom: 6.4rem;
+  }
+  &__title {
+    margin-bottom: 1.5rem;
+    font-family: var(--font-2);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 1.16;
+    color: var(--text-dark);
+  }
+  &__img {
+    position: relative;
+    margin-bottom: 4.3rem;
+    height: 54.5rem;
+    @media screen and (max-width: 576px) {
+      height: 30rem;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 2rem;
+    }
+  }
+  &__list {
+    margin-bottom: 3.6rem;
+  }
+  &__item {
+    position: relative;
+    padding-left: 2rem;
+    margin-bottom: 1.6rem;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.16;
+    color: #595566;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0.5rem;
+      transform: translateY(-50%);
+      width: 0.3rem;
+      height: 0.3rem;
+      background: #595566;
+      border-radius: 50%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__cite {
+    position: relative;
+    margin-bottom: 3.6rem;
+    padding: 9.4rem 0 8.6rem;
+    background: var(--text-dark);
+    border-radius: 3rem;
+    overflow: hidden;
+  }
+  &__dotted {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &__square {
+    position: absolute;
+    bottom: 0;
+    left: -15rem;
+    height: 22.6rem;
+    width: 28.4rem;
+    background: var(--contrast);
+    transform: rotate(-135deg);
+    border-radius: 2rem;
+    z-index: 2;
+  }
+  &__icon {
+    margin-bottom: 3.3rem;
+    text-align: center;
+  }
+  &__subtext {
+    position: relative;
+    max-width: 74%;
+    margin: 0 auto;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 3.2rem;
+    line-height: 1.4;
+    text-align: center;
+    color: #fff;
+    z-index: 3;
+  }
+  &__list-1 {
+    margin-bottom: 3.6rem;
+    padding-left: 1.2rem;
+  }
+  &__item-1 {
+    margin-bottom: 1.6rem;
+    font-family: var(--font-2);
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.16;
+    color: #595566;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__author {
+    position: relative;
+    padding: 5.9rem 5.5rem 6.8rem;
+    width: 80rem;
+    background: var(--text-dark);
+    border-radius: 3rem;
+    @media screen and (max-width: 768px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 576px) {
+      padding: 5.9rem 3.5rem 4.8rem;
+    }
+  }
+  &__dotted-2 {
+    position: absolute;
+    top: 0;
+    left: 42rem;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+  &__decor {
+    position: absolute;
+    top: 4.6rem;
+    left: 2rem;
+    z-index: 1;
+    @media screen and (max-width: 768px) {
+      top: 1.6rem;
+    }
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 3.5rem;
+    @media screen and (max-width: 768px) {
+      display: block;
+    }
+  }
+  &__ava {
+    flex: 0 0 29%;
+    position: relative;
+    // width: 19.2rem;
+    height: 19.2rem;
+    @media screen and (max-width: 768px) {
+      margin-bottom: 3rem;
+    }
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 19.2rem;
+      height: 19.2rem;
+      object-fit: cover;
+      border-radius: 50%;
+      z-index: 2;
+    }
+  }
+  &__content {
+    position: relative;
+    z-index: 2;
+  }
+  &__name {
+    margin-bottom: 0.5rem;
+    font-family: var(--font-2);
+    font-weight: 600;
+    font-size: 3.5rem;
+    line-height: 1.16;
+    color: #fff;
+  }
+  &__job {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.475;
+    color: #fff;
+  }
+  &__desc {
+    margin-bottom: 1.9rem;
+    color: #fff;
+  }
+  &__social {
+    display: flex;
+    column-gap: 2.3rem;
+    svg {
+      display: inline-block;
+    }
+  }
+}
