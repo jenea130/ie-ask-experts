@@ -9,6 +9,7 @@ window.addEventListener("DOMContentLoaded", function () {
     const video = document.querySelector(".video")
     const accordion = document.querySelector(".accordion")
     const filter = document.querySelector(".taxes")
+    const mainMenu = document.querySelector('#js-main-menu');
 
     if (plan) {
         togglePrice();
@@ -26,6 +27,8 @@ window.addEventListener("DOMContentLoaded", function () {
         filterItems();
     }
 
-    toggleMenu();
+    // if (mainMenu) {
+    // toggleMenu();
+    // }
 
 });
