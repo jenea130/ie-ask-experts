@@ -1,0 +1,113 @@
+.form {
+  &-group {
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+      margin-bottom: 2rem;
+      padding: 1.4rem 3rem;
+      width: 100%;
+      font-family: var(--font-1);
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: normal;
+      background: transparent;
+      border-radius: 0;
+      border: 1px solid rgba(255, 255, 255, 0.20);
+      transition: all 300ms ease-out;
+      outline: none;
+      &::placeholder {
+        color: white;
+      }
+    }
+    textarea {
+      resize: vertical;
+      height: 5.5rem;
+      overflow: hidden;
+    }
+  }
+  &-footer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    input[type="checkbox"] {
+      display: none;
+      &:checked + .wpcf7-list-item-label {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+    .privacy {
+      flex: 1;
+      font-size: 1.2rem;
+      font-weight: 300;
+      line-height: 130%;
+      color: white;
+      .wpcf7-list-item {
+        margin: 0;
+      }
+      .wpcf7-list-item-label {
+        display: block;
+        position: relative;
+        padding-right: 2rem;
+        padding-left: 4rem;
+        cursor: pointer;
+        @media screen and (max-width: 992px) {
+          text-align: left;
+        }
+        &::before {
+          position: absolute;
+          top: 3px;
+          left: 0;
+          width: 20px;
+          height: 20px;
+          border-radius: 2px;
+          border: 1px solid #fff;
+        }
+        &::after {
+          position: absolute;
+          top: 8px;
+          left: 5px;
+          width: 10px;
+          height: 10px;
+          opacity: 0;
+          background: #fff;
+        }
+        a {
+          text-decoration: underline;
+          transition: all 300ms ease-out;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  &__submit {
+    display: flex;
+    align-items: center;
+    input {
+      position: relative;
+      top: -3px;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--contrast);
+      background: transparent;
+      border: none;
+    }
+  }
+  .wpcf7-spinner {
+    position: absolute;
+    bottom: -4rem;
+    right: 0;
+    //display: block !important;
+    //visibility: visible;
+    margin: 0;
+    width: 24px;
+    height: 24px;
+    //background: red;
+    //display: none;
+  }
+}
+
