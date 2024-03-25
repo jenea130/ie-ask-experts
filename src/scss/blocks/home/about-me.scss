@@ -28,8 +28,8 @@
       color: var(--contrast);
     }
   }
-  &__email span,
-  &__phone span {
+  &__email a,
+  &__phone a {
     font-family: var(--font-2);
     font-weight: 500;
     font-size: 2rem;
