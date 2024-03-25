@@ -10,7 +10,6 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <div class="wrapper">
     <?php
     $header = get_field('header', 'option');
     $logo = $header['logo'];

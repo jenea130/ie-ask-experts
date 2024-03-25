@@ -74,13 +74,34 @@ Version: 0.4
     font-style: normal;
 }
 
-/* .wrapper::before {
+.wrapper::before {
     background: url("assets/i/svg/fon-contact-1.svg") no-repeat;
-} */
+}
 
 .home-intro::before {
     background: url("assets/i/svg/fon-top.svg") no-repeat left 52% top 10%;
 }
+
 .home-intro::after {
     background: url("assets/i/svg/fon-bottom.svg") no-repeat left bottom;
+}
+
+.features__item:last-child h3 {
+    color: #fff;
+}
+
+.features__item:last-child .text {
+    color: #fff;
+}
+
+.features__item:last-child .btn {
+    color: #fff;
+    background: #151515;
+    border: 2px solid #151515;
+    transition: all 0.3s ease;
+}
+.features__item:last-child .btn:hover {
+      background: #fff;
+      color: #151515;
+      border: 2px solid #151515;
 }
