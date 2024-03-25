@@ -1,8 +1,15 @@
+<?php
+$services = get_field('services');
+$label = $services['label'];
+$title = $services['title'];
+$items = $services['items'];
+$button_text = $services['button_text'];
+?>
 <div class="services">
   <div class="container">
     <div class="services__info">
-      <div class="services__label label">Services</div>
-      <h2 class="services__title title">Get Control Over Your Business I take your finance to next level</h2>
+      <div class="services__label label"><?php echo $label; ?></div>
+      <h2 class="services__title title"><?php echo $title; ?></h2>
     </div>
     <div class="services__body">
       <div class="services__arrow services__arrow--prev">
@@ -17,41 +24,23 @@
       </div>
     </div>
     <div class="services__wrapper">
-      <div class="services__item">
-        <div class="services__img"> <img src="assets/i/services/services-1.jpg" alt=""></div>
-        <div class="services__content">
-          <div class="services__subtitle subtitle">Audit & Evaluation</div>
-          <div class="services__text text">Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</div><a class="services__btn btn">Learn More</a>
+      <?php foreach ($items as $item) : ?>
+        <?php
+        $image = $item['image'];
+        $title = $item['title'];
+        $text = $item['text'];
+        ?>
+        <div class="services__item">
+          <div class="services__img">
+            <img src="<?php echo $image; ?>" alt="">
+          </div>
+          <div class="services__content">
+            <div class="services__subtitle subtitle"><?php echo $title; ?></div>
+            <div class="services__text text"><?php echo $text; ?></div>
+            <a class="services__btn btn"><?php echo $button_text; ?></a>
+          </div>
         </div>
-      </div>
-      <div class="services__item">
-        <div class="services__img"> <img src="assets/i/services/services-2.jpg" alt=""></div>
-        <div class="services__content">
-          <div class="services__subtitle subtitle">Audit & Evaluation</div>
-          <div class="services__text text">Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</div><a class="services__btn btn">Learn More</a>
-        </div>
-      </div>
-      <div class="services__item">
-        <div class="services__img"> <img src="assets/i/services/services-3.jpg" alt=""></div>
-        <div class="services__content">
-          <div class="services__subtitle subtitle">Audit & Evaluation</div>
-          <div class="services__text text">Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</div><a class="services__btn btn">Learn More</a>
-        </div>
-      </div>
-      <div class="services__item">
-        <div class="services__img"> <img src="assets/i/services/services-1.jpg" alt=""></div>
-        <div class="services__content">
-          <div class="services__subtitle subtitle">Audit & Evaluation</div>
-          <div class="services__text text">Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</div><a class="services__btn btn">Learn More</a>
-        </div>
-      </div>
-      <div class="services__item">
-        <div class="services__img"> <img src="assets/i/services/services-3.jpg" alt=""></div>
-        <div class="services__content">
-          <div class="services__subtitle subtitle">Audit & Evaluation</div>
-          <div class="services__text text">Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</div><a class="services__btn btn">Learn More</a>
-        </div>
-      </div>
+      <?php endforeach; ?>
     </div>
   </div>
 </div>
