@@ -32,6 +32,21 @@
     margin: 0 1.8rem;
     border-radius: 2rem;
     background: #ccc;
+    &:last-child h3,
+    &:last-child .text {
+      color: #fff;
+    }
+    &:last-child .btn {
+      color: #fff;
+      background: #151515;
+      border: 2px solid #151515;
+      transition: all 0.3s ease;
+      &:hover {
+        background: #fff;
+        color: #151515;
+        border: 2px solid #151515;
+      }
+    }
     @media screen and (max-width: 992px) {
       flex: 0 0 calc(100% / 2 - 3.6rem);
     }

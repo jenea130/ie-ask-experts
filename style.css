@@ -89,24 +89,3 @@ Version: 0.4
 .about-me__picture::after {
     background: url("assets/i/svg/fon-about-us.svg") no-repeat left bottom 1rem;
 }
-
-.features__item:last-child h3 {
-    color: #fff;
-}
-
-.features__item:last-child .text {
-    color: #fff;
-}
-
-.features__item:last-child .btn {
-    color: #fff;
-    background: #151515;
-    border: 2px solid #151515;
-    transition: all 0.3s ease;
-}
-
-.features__item:last-child .btn:hover {
-    background: #fff;
-    color: #151515;
-    border: 2px solid #151515;
-}
