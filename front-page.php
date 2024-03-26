@@ -12,5 +12,7 @@ get_header();
 </div>
 <?php echo get_template_part('template-parts/home/services'); ?>
 <?php echo get_template_part('template-parts/home/experience'); ?>
+<?php echo get_template_part('template-parts/home/work'); ?>
+<?php echo get_template_part('template-parts/home/education'); ?>
 
 <?php get_footer(); ?>

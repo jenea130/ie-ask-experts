@@ -1,110 +1,50 @@
-<div class="work"> 
-  <img class="work__img" src="assets/i/work/work-bg.jpg" alt="">
+<?php
+$work = get_field('work');
+$label = $work['label'];
+$title = $work['title'];
+$button_text = $work['button_text'];
+$image = $work['image'];
+?>
+<div class="work">
+  <img class="work__img" src="<?php echo $image; ?>" alt="">
   <div class="container rel">
-    <div class="work__label label">Work</div>
+    <div class="work__label label"><?php echo $label; ?></div>
     <div class="work__header">
-      <h2 class="work__title title">My latest project</h2>
-      <a class="work__btn btn" href="#">More Work</a>
+      <h2 class="work__title title"><?php echo $title; ?></h2>
+      <a class="work__btn btn" href="#"><?php echo $button_text; ?></a>
     </div>
     <div class="work__grid">
-      <div class="work__item work__item1"> 
-        <img src="assets/i/work/work-1.jpg" alt="">
-        <div class="work__wrap">
-          <div class="work__icon">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.93968 18.9259V11.8769H0.78468V7.84886H7.93968V0.799858H12.1797V7.84886H19.3347V11.8769H12.1797V18.9259H7.93968Z" fill="#181818"></path>
-            </svg>
+      <?php
+      $works = new WP_Query([
+        'post_type' => 'case-studies',
+        'posts_per_page' => 7,
+      ]);
+      ?>
+      <?php if ($works->have_posts()) : ?>
+        <?php while ($works->have_posts()) : ?>
+          <?php $works->the_post(); ?>
+          <?php
+          $title = get_the_title();
+          $permalink = get_the_permalink();
+          $image = get_the_post_thumbnail_url();
+          $cur_terms = get_the_terms(get_the_ID(), 'category-case-studies');
+          $term_name = $cur_terms[0]->name;
+          ?>
+          <div class="work__item">
+            <img src="<?php echo $image; ?>" alt="">
+            <div class="work__wrap">
+              <a href="#" class="work__icon">
+                <?php get_template_part('template-parts/icons/icon-plus'); ?>
+              </a>
+              <div class="work__info">
+                <h3 class="work__subtitle subtitle"><?php echo $title; ?></h3>
+                <div class="work__text"><?php echo $term_name; ?></div>
+              </div>
+            </div>
           </div>
-          <div class="work__info">
-            <h3 class="work__subtitle subtitle">Taxes & Efficiency</h3>
-            <div class="work__text">Business</div>
-          </div>
-        </div>
-      </div>
-      <div class="work__item work__item2"> 
-        <img src="assets/i/work/work-2.jpg" alt="">
-        <div class="work__wrap">
-          <div class="work__icon">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.93968 18.9259V11.8769H0.78468V7.84886H7.93968V0.799858H12.1797V7.84886H19.3347V11.8769H12.1797V18.9259H7.93968Z" fill="#181818"></path>
-            </svg>
-          </div>
-          <div class="work__info">
-            <h3 class="work__subtitle subtitle">Taxes & Efficiency</h3>
-            <div class="work__text">Business</div>
-          </div>
-        </div>
-      </div>
-      <div class="work__item work__item3"> 
-        <img src="assets/i/work/work-3.jpg" alt="">
-        <div class="work__wrap">
-          <div class="work__icon">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.93968 18.9259V11.8769H0.78468V7.84886H7.93968V0.799858H12.1797V7.84886H19.3347V11.8769H12.1797V18.9259H7.93968Z" fill="#181818"></path>
-            </svg>
-          </div>
-          <div class="work__info">
-            <h3 class="work__subtitle subtitle">Taxes & Efficiency</h3>
-            <div class="work__text">Business</div>
-          </div>
-        </div>
-      </div>
-      <div class="work__item work__item4"> 
-        <img src="assets/i/work/work-4.jpg" alt="">
-        <div class="work__wrap">
-          <div class="work__icon">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.93968 18.9259V11.8769H0.78468V7.84886H7.93968V0.799858H12.1797V7.84886H19.3347V11.8769H12.1797V18.9259H7.93968Z" fill="#181818"></path>
-            </svg>
-          </div>
-          <div class="work__info">
-            <h3 class="work__subtitle subtitle">Taxes & Efficiency</h3>
-            <div class="work__text">Business</div>
-          </div>
-        </div>
-      </div>
-      <div class="work__item work__item5"> 
-        <img src="assets/i/work/work-5.jpg" alt="">
-        <div class="work__wrap">
-          <div class="work__icon">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.93968 18.9259V11.8769H0.78468V7.84886H7.93968V0.799858H12.1797V7.84886H19.3347V11.8769H12.1797V18.9259H7.93968Z" fill="#181818"></path>
-            </svg>
-          </div>
-          <div class="work__info">
-            <h3 class="work__subtitle subtitle">Taxes & Efficiency</h3>
-            <div class="work__text">Business</div>
-          </div>
-        </div>
-      </div>
-      <div class="work__item work__item6"> 
-        <img src="assets/i/work/work-6.jpg" alt="">
-        <div class="work__wrap">
-          <div class="work__icon">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.93968 18.9259V11.8769H0.78468V7.84886H7.93968V0.799858H12.1797V7.84886H19.3347V11.8769H12.1797V18.9259H7.93968Z" fill="#181818"></path>
-            </svg>
-          </div>
-          <div class="work__info">
-            <h3 class="work__subtitle subtitle">Taxes & Efficiency</h3>
-            <div class="work__text">Business</div>
-          </div>
-        </div>
-      </div>
-      <div class="work__item work__item7"> 
-        <img src="assets/i/work/work-7.jpg" alt="">
-        <div class="work__wrap">
-          <div class="work__icon">
-            <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.93968 18.9259V11.8769H0.78468V7.84886H7.93968V0.799858H12.1797V7.84886H19.3347V11.8769H12.1797V18.9259H7.93968Z" fill="#181818"></path>
-            </svg>
-          </div>
-          <div class="work__info">
-            <h3 class="work__subtitle subtitle">Taxes & Efficiency</h3>
-            <div class="work__text">Business</div>
-          </div>
-        </div>
-      </div>
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); ?>
+      <?php endif; ?>
     </div>
   </div>
 </div>
