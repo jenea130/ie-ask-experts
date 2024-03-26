@@ -1,3 +1,10 @@
+<?php 
+$education = get_field('education');
+$label = $education['label'];
+$title = $education['title'];
+$sub_label = $education['sub_label'];
+$items = $education['items'];
+?>
 <div class="education">
   <div class="container">
     <div class="education__label label">Information</div>

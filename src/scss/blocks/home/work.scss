@@ -137,14 +137,6 @@
     grid-column: 1/2;
     grid-row: 2/4;
   }
-  &__item:nth-of-type(4) {
-  }
-  &__item:nth-of-type(5) {
-  }
-  &__item:nth-of-type(6) {
-  }
-  &__item:nth-of-type(7) {
-  }
   @media screen and (max-width: 768px) {
     &__grid {
       gap: 3rem;

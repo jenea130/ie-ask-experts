@@ -89,3 +89,10 @@ Version: 0.4
 .about-me__picture::after {
     background: url("assets/i/svg/fon-about-us.svg") no-repeat left bottom 1rem;
 }
+
+.education__item--left::before {
+    background: url("assets/i/svg/icon-circle-left.svg") no-repeat;
+}
+.education__item--right::before {
+    background: url("assets/i/svg/icon-circle-right.svg") no-repeat;
+}
