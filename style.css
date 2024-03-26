@@ -93,6 +93,11 @@ Version: 0.4
 .education__item--left::before {
     background: url("assets/i/svg/icon-circle-left.svg") no-repeat;
 }
+
 .education__item--right::before {
     background: url("assets/i/svg/icon-circle-right.svg") no-repeat;
+}
+
+.reviews__text::before {
+    background: url("assets/i/svg/icon-cite.svg") no-repeat;
 }

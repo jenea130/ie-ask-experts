@@ -15,5 +15,6 @@ get_header();
 <?php echo get_template_part('template-parts/home/work'); ?>
 <?php echo get_template_part('template-parts/home/education'); ?>
 <?php echo get_template_part('template-parts/home/counter'); ?>
+<?php echo get_template_part('template-parts/home/reviews'); ?>
 
 <?php get_footer(); ?>
