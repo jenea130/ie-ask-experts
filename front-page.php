@@ -17,5 +17,6 @@ get_header();
 <?php echo get_template_part('template-parts/home/counter'); ?>
 <?php echo get_template_part('template-parts/home/reviews'); ?>
 <?php echo get_template_part('template-parts/home/team'); ?>
+<?php echo get_template_part('template-parts/home/brands'); ?>
 
 <?php get_footer(); ?>
