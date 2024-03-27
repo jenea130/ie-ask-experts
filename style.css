@@ -79,11 +79,11 @@ Version: 0.4
 }
 
 .home-intro::before {
-    background: url("assets/i/svg/fon-top.svg") no-repeat left 52% top 10%;
+    background-image: url("assets/i/svg/fon-top.svg");
 }
 
 .home-intro::after {
-    background: url("assets/i/svg/fon-bottom.svg") no-repeat left bottom;
+    background-image: url("assets/i/svg/fon-bottom.svg");
 }
 
 .about-me__picture::after {
