@@ -47,9 +47,15 @@
   }
   &__arrow--prev {
     left: -3.6rem;
+    @media screen and (max-width: 1300px) {
+      left: -1rem;    
+    }
   }
   &__arrow--next {
     right: -3.6rem;
+    @media screen and (max-width: 1300px) {
+      right: -1rem;    
+    }
   }
   
   &__wrapper {
