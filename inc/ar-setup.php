@@ -44,6 +44,8 @@ if (!function_exists('ar_starter_setup')) :
 			array(
 				'menu-1' => esc_html__('Header', 'bs-vite'),
 				'footer' => esc_html__('Footer', 'bs-vite'),
+				'product' => esc_html__('Product', 'bs-vite'),
+				'company' => esc_html__('Company', 'bs-vite'),
 			)
 		);
 

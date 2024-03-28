@@ -1,7 +1,7 @@
-<?php 
-$main_footer = get_field('main-footer', 'option');
-$logo = $main_footer['logo'];
-$image = $main_footer['image'];
+<?php
+$footer = get_field('footer', 'option');
+$logo = $footer['logo'];
+$image = $footer['image'];
 ?>
 <div class="main-footer">
   <img src="<?php echo $image; ?>" alt="">
@@ -9,7 +9,7 @@ $image = $main_footer['image'];
     <div class="main-footer__wrapper">
       <div class="main-footer__head">
         <a class="main-footer__logo" href="#">
-        <?php echo $logo; ?>
+          <?php echo $logo; ?>
         </a>
         <div class="main-footer__social">
           <a href="https://facebook.com" target="_blank">Fb. /</a>
@@ -21,24 +21,45 @@ $image = $main_footer['image'];
       <div class="main-footer__content">
         <div class="main-footer__col">
           <h3 class="main-footer__title">Product</h3>
-          <ul class="main-footer__list">
-            <li><a class="main-footer__link" href="#">Service</a></li>
-            <li><a class="main-footer__link" href="#">FAQ</a></li>
-            <li><a class="main-footer__link" href="#">Single Service</a></li>
-            <li><a class="main-footer__link" href="#">Get Quote</a></li>
-            <li><a class="main-footer__link" href="#">Prices</a></li>
-          </ul>
+          <?php wp_nav_menu([
+            'theme_location'  => 'product',
+            'menu'            => '',
+            'container'       => '',
+            'container_class' => '',
+            'container_id'    => '',
+            'menu_class'      => 'main-footer__list',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => '',
+          ]); ?>
         </div>
         <div class="main-footer__col">
           <h3 class="main-footer__title">Company</h3>
-          <ul class="main-footer__list">
-            <li><a class="main-footer__link" href="#">About</a></li>
-            <li><a class="main-footer__link" href="#">News</a></li>
-            <li><a class="main-footer__link" href="#">Contacts</a></li>
-            <li><a class="main-footer__link" href="#">Testimonials</a></li>
-            <li><a class="main-footer__link" href="#">Our team</a></li>
-            <li><a class="main-footer__link" href="#">Our approach</a></li>
-          </ul>
+          <?php wp_nav_menu([
+            'theme_location'  => 'company',
+            'menu'            => '',
+            'container'       => '',
+            'container_class' => '',
+            'container_id'    => '',
+            'menu_class'      => 'main-footer__list',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => 'wp_page_menu',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => '',
+          ]); ?>
         </div>
         <div class="main-footer__col">
           <h3 class="main-footer__title">Address</h3>

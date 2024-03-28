@@ -1,9 +1,9 @@
 .main-footer {
   position: relative;
-    padding-top: 12.6rem;
-    @media screen and (max-width: 768px) {
-      padding-top: 8rem;
-    }
+  padding-top: 12.6rem;
+  @media screen and (max-width: 768px) {
+    padding-top: 8rem;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -140,30 +140,32 @@
       background: var(--accent);
     }
   }
-  &__link {
-    position: relative;
-    padding-left: 2.6rem;
-    display: inline-block;
-    font-family: var(--font-1);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.475;
-    color: #fff;
-    transition: color .3s ease;
-    &:hover {
-      color: var(--accent);
-    }
-    &::before {
-      content: "";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: 1rem;
-      width: 6px;
-      height: 6px;
-      border-radius: 50%;
-      background: #fff;
-      z-index: 8;
+  &__list {
+    a {
+      position: relative;
+      padding-left: 2.6rem;
+      display: inline-block;
+      font-family: var(--font-1);
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 1.475;
+      color: #fff;
+      transition: color 0.3s ease;
+      &:hover {
+        color: var(--accent);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 1rem;
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: #fff;
+        z-index: 8;
+      }
     }
   }
   &__address {

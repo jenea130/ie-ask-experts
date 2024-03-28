@@ -4,7 +4,9 @@ $label = $plan['label'];
 $title = $plan['title'];
 $text = $plan['text'];
 $items = $plan['items'];
-$button_text = $plan['$button_text'];
+$select = $items[0]["tarif"][1]["type"];
+// vardump($select);
+$button_text = $plan['button_text'];
 ?>
 <div class="plan">
   <div class="container">
@@ -68,7 +70,7 @@ $button_text = $plan['$button_text'];
               </li>
             <?php endforeach; ?>
           </ul>
-          <a class="card-plan__btn btn" href="#">Get This Plan</a>
+          <a class="card-plan__btn btn" href="#"><?php echo $button_text; ?></a>
         </div>
       <?php endforeach; ?>
     </div>
