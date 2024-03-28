@@ -101,3 +101,7 @@ Version: 0.4
 .reviews__text::before {
     background: url("assets/i/svg/icon-cite.svg") no-repeat;
 }
+
+.card-plan__body::before {
+    background: url("assets/i/svg/fon-plan.svg") no-repeat;
+}

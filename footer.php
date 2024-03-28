@@ -22,10 +22,8 @@
 </?php $partnerUrl = get_field('partner_url', 'option') ?>
 </?php $partnerLogo = get_field('parnter_logo', 'option') ?>-->
 
-<footer class="main-footer">
+<?php echo get_template_part('template-parts/footer/main-footer'); ?>
 
-
-</footer>
 <?php wp_footer(); ?>
 </body>
 
