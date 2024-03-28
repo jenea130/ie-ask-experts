@@ -46,3 +46,4 @@ $items_right = $education['items_right'];
       </div>
     </div>
   </div>
+</div>
