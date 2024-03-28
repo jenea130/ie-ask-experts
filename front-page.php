@@ -19,5 +19,10 @@ get_header();
 <?php echo get_template_part('template-parts/home/team'); ?>
 <?php echo get_template_part('template-parts/home/brands'); ?>
 <?php echo get_template_part('template-parts/home/plan'); ?>
+<div class="container">
+  <div class="wrapper">
+    <?php echo get_template_part('template-parts/home/contact'); ?>
+  </div>
+</div>
 
 <?php get_footer(); ?>
