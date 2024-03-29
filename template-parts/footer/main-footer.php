@@ -2,6 +2,7 @@
 $footer = get_field('footer', 'option');
 $logo = $footer['logo'];
 $image = $footer['image'];
+$text = $footer['text'];
 $socials = $footer['socials'];
 $title_1 = $footer['title_1'];
 $title_2 = $footer['title_2'];
@@ -21,10 +22,10 @@ $copyright = $footer['copyright'];
         <div class="main-footer__social">
           <?php foreach ($socials as $item) : ?>
             <?php
-            $image = $item['image'];
+            $text = $item['text'];
             $url = $item['url'];
             ?>
-            <a href="<?php echo $url; ?>" target="_blank"><?php echo $image; ?></a>
+            <a href="<?php echo $url; ?>" target="_blank"><?php echo $text; ?></a>
           <?php endforeach; ?>
         </div>
       </div>
@@ -81,10 +82,10 @@ $copyright = $footer['copyright'];
     <div class="main-footer__copyright footer-copyright">
       <div class="footer-copyright__col"><?php echo $copyright; ?></div>
       <div class="footer-copyright__col">
-        <a href="/licenses.html">Terms of Service</a>
+        <a href="<?php echo get_the_permalink(254); ?>" target="_blank"><?php echo get_the_title(254); ?></a>
       </div>
       <div class="footer-copyright__col">
-        <a href="#">Privacy Policy</a>
+        <a href="<?php echo get_the_permalink(3); ?>" target="_blank"><?php echo get_the_title(3); ?></a>
       </div>
     </div>
   </div>
