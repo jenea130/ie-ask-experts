@@ -2,6 +2,13 @@
 $footer = get_field('footer', 'option');
 $logo = $footer['logo'];
 $image = $footer['image'];
+$socials = $footer['socials'];
+$title_1 = $footer['title_1'];
+$title_2 = $footer['title_2'];
+$title_3 = $footer['title_3'];
+$full_address = $footer['full_address'];
+$button_text = $footer['button_text'];
+$copyright = $footer['copyright'];
 ?>
 <div class="main-footer">
   <img src="<?php echo $image; ?>" alt="">
@@ -12,15 +19,18 @@ $image = $footer['image'];
           <?php echo $logo; ?>
         </a>
         <div class="main-footer__social">
-          <a href="https://facebook.com" target="_blank">Fb. /</a>
-          <a href="https://instagram.com" target="_blank">Ig. /</a>
-          <a href="https://twitter.com" target="_blank">Tw. /</a>
-          <a href="#" target="_blank">Be.</a>
+          <?php foreach ($socials as $item) : ?>
+            <?php
+            $image = $item['image'];
+            $url = $item['url'];
+            ?>
+            <a href="<?php echo $url; ?>" target="_blank"><?php echo $image; ?></a>
+          <?php endforeach; ?>
         </div>
       </div>
       <div class="main-footer__content">
         <div class="main-footer__col">
-          <h3 class="main-footer__title">Product</h3>
+          <h3 class="main-footer__title"><?php echo $title_1; ?></h3>
           <?php wp_nav_menu([
             'theme_location'  => 'product',
             'menu'            => '',
@@ -41,7 +51,7 @@ $image = $footer['image'];
           ]); ?>
         </div>
         <div class="main-footer__col">
-          <h3 class="main-footer__title">Company</h3>
+          <h3 class="main-footer__title"><?php echo $title_2; ?></h3>
           <?php wp_nav_menu([
             'theme_location'  => 'company',
             'menu'            => '',
@@ -62,14 +72,14 @@ $image = $footer['image'];
           ]); ?>
         </div>
         <div class="main-footer__col">
-          <h3 class="main-footer__title">Address</h3>
-          <div class="main-footer__address">1700 W Blancke St, kiyev port south USA, America</div>
-          <a class="btn" href="#">Book an Appoinment</a>
+          <h3 class="main-footer__title"><?php echo $title_3; ?></h3>
+          <div class="main-footer__address"><?php echo $full_address; ?></div>
+          <a class="btn" href="#"><?php echo $button_text; ?></a>
         </div>
       </div>
     </div>
     <div class="main-footer__copyright footer-copyright">
-      <div class="footer-copyright__col">©2020 Consultalk. All rights reserved</div>
+      <div class="footer-copyright__col"><?php echo $copyright; ?></div>
       <div class="footer-copyright__col">
         <a href="/licenses.html">Terms of Service</a>
       </div>

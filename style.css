@@ -105,3 +105,7 @@ Version: 0.4
 .card-plan__body::before {
     background: url("assets/i/svg/fon-plan.svg") no-repeat;
 }
+
+.vision__item::before {
+    background: url("assets/i/svg/icon-vision.svg") no-repeat;
+}

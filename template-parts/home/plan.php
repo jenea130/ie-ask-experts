@@ -4,8 +4,8 @@ $label = $plan['label'];
 $title = $plan['title'];
 $text = $plan['text'];
 $items = $plan['items'];
-$select = $items[0]["tarif"][1]["type"];
-// vardump($select);
+$select1 = $items[0]["tarif"][0]["type"];
+$select2 = $items[0]["tarif"][1]["type"];
 $button_text = $plan['button_text'];
 ?>
 <div class="plan">
@@ -18,11 +18,11 @@ $button_text = $plan['button_text'];
         <div class="plan__flex">
           <div class="plan__item active" data-target="js-price-monthly">
             <div class="plan__circle"></div>
-            <span class="plan__tarif">Monthly</span>
+            <span class="plan__tarif"><?php echo $select1; ?></span>
           </div>
           <div class="plan__item" data-target="js-price-yearly">
             <div class="plan__circle"></div>
-            <span class="plan__tarif">Yearly</span>
+            <span class="plan__tarif"><?php echo $select2; ?></span>
           </div>
         </div>
       </div>
