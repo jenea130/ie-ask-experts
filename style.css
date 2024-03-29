@@ -109,3 +109,7 @@ Version: 0.4
 .vision__item::before {
     background: url("assets/i/svg/icon-vision.svg") no-repeat;
 }
+
+.our-core__link::before {
+    background: url("assets/i/svg/icon-arrow-link.svg") no-repeat;
+}
