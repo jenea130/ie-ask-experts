@@ -8,7 +8,6 @@ if ($term_id) {
     'terms'    => $term_id,
   );
 }
-
 $terms = get_terms([
   'taxonomy' => 'category-case-studies',
   'hide_empty' => false,
@@ -16,9 +15,9 @@ $terms = get_terms([
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $posts = new WP_Query([
   'post_type' => 'case-studies',
-  'posts_per_page' => -1,
-  'tax_query' => $tax_query
-  // 'paged'          => $paged,
+  'posts_per_page' => 2,
+  'tax_query' => $tax_query,
+  'paged'          => $paged,
 ]);
 ?>
 <div class="taxes">
@@ -75,5 +74,5 @@ $posts = new WP_Query([
       <?php wp_reset_postdata(); ?>
     <?php endif; ?>
   </div>
-  <!--</?php wp_pagenavi(array('query' => $posts)); ?>-->
+  <?php wp_pagenavi(array('query' => $posts)); ?>
 </div>
