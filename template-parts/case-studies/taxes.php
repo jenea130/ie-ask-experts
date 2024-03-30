@@ -1,22 +1,47 @@
 <?php
+$tax_query = [];
+$term_id = isset($_GET['term_id']) ? $_GET['term_id'] : '';
+if ($term_id) {
+  $tax_query[] =  array(
+    'taxonomy' => 'category-case-studies',
+    'field'    => 'slug',
+    'terms'    => $term_id,
+  );
+}
+
 $terms = get_terms([
   'taxonomy' => 'category-case-studies',
   'hide_empty' => false,
 ]);
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $posts = new WP_Query([
   'post_type' => 'case-studies',
   'posts_per_page' => -1,
+  'tax_query' => $tax_query
+  // 'paged'          => $paged,
 ]);
 ?>
 <div class="taxes">
   <ul class="taxes__header">
-    <li class="taxes__item" data-target="all">All</li>
+    <li class="taxes__item" data-target="all">
+      <?php
+      $class_name = !$term_id ? 'active' : '';
+      ?>
+      <a class="<?php echo $class_name; ?>" href="<?php echo get_the_permalink(); ?>">
+        All
+      </a>
+    </li>
     <?php foreach ($terms as $term) : ?>
       <?php
       $name = $term->name;
       $slug = $term->slug;
+      $class_name = $slug === $term_id ? 'active' : '';
       ?>
-      <li class="taxes__item" data-target="<?php echo $slug; ?>"><?php echo $name; ?></li>
+      <li class="taxes__item" data-target="<?php echo $slug; ?>">
+        <a class="<?php echo $class_name; ?>" href="<?php echo get_the_permalink(); ?>?term_id=<?php echo $slug; ?>">
+          <?php echo $name; ?>
+        </a>
+      </li>
     <?php endforeach; ?>
   </ul>
   <div class="taxes__wrapper">
@@ -31,7 +56,7 @@ $posts = new WP_Query([
         $term_name = $term->name;
         $term_slug = $term->slug;
         ?>
-        
+
         <a class="taxes__img <?php echo $term_slug; ?>" href="<?php echo $permalink; ?>">
           <img src="<?php echo $image; ?>" alt="">
           <div class="taxes__wrap">
@@ -50,4 +75,5 @@ $posts = new WP_Query([
       <?php wp_reset_postdata(); ?>
     <?php endif; ?>
   </div>
+  <!--</?php wp_pagenavi(array('query' => $posts)); ?>-->
 </div>
