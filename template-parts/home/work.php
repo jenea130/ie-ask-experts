@@ -17,7 +17,13 @@ $image = $work['image'];
       <?php
       $works = new WP_Query([
         'post_type' => 'case-studies',
-        'posts_per_page' => 7,
+        'posts_per_page' => -1,
+        'meta_query' => [
+          [
+            'key' => 'for_loop_featured',
+            'value' => true,
+          ]
+        ]
       ]);
       ?>
       <?php if ($works->have_posts()) : ?>
