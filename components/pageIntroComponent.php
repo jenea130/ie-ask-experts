@@ -1,4 +1,9 @@
-<?php function pageIntroComponent($page_intro)
+<?php 
+/*
+*
+* @param string $class = '' | 'page_intro--small' | 'page_intro--big'
+*/
+function pageIntroComponent($page_intro, $class='')
 { ?>
 <?php 
 $label = $page_intro['label'];
