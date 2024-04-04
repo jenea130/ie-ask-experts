@@ -23,8 +23,9 @@ $posts = new WP_Query([
           $excerpt = get_the_excerpt();
           $for_loop = get_field('for_loop');
           $icon = $for_loop['icon'];
+          $permalink = get_the_permalink();
           ?>
-          <a class="control__card" href="/single-service.html">
+          <a class="control__card" href="<?php echo $permalink; ?>">
             <div class="control__item">
               <div class="control__icon">
                 <?php echo $icon; ?>
