@@ -4,6 +4,7 @@ $label = $contact_us['label'];
 $title = $contact_us['title'];
 $text = $contact_us['text'];
 $items = $contact_us['items'];
+$form = $contact_us['form'];
 ?>
 <div class="contact-us">
   <div class="contact-us__wrapper">
@@ -27,7 +28,7 @@ $items = $contact_us['items'];
               <div class="contact-us__info"><?php echo $label; ?></div>
               <?php if ($type === 'phone') : ?>
                 <a class="contact-us__subtitle" href="tel:<?php echo clear_phone($text); ?>" target="_blank">
-                 <h4><?php echo $text; ?></h4> 
+                  <h4><?php echo $text; ?></h4>
                 </a>
               <?php else : ?>
                 <a class="contact-us__subtitle" href="#">
@@ -40,32 +41,8 @@ $items = $contact_us['items'];
       </div>
     </div>
     <div class="contact-us__form form">
-      <form action="">
-        <div class="form__wrap">
-          <div class="form__group">
-            <label class="form__label" for="">Full Name</label>
-            <input type="text" placeholder="">
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="">Email</label>
-            <input type="email">
-          </div>
-        </div>
-        <div class="form__wrap">
-          <div class="form__group">
-            <label class="form__label" for="">Phone </label>
-            <input type="tel">
-          </div>
-          <div class="form__group">
-            <label class="form__label" for="">Company(optional)</label>
-            <input type="text">
-          </div>
-        </div>
-        <div class="form__group">
-          <label class="form__label" for="">Message</label>
-          <textarea name="" placeholder=""> </textarea>
-        </div>
-        <button class="form__btn btn btn--dark">Send Message</button>
+      <form>
+        <?php echo do_shortcode($form); ?>
       </form>
     </div>
   </div>

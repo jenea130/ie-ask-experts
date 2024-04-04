@@ -5,8 +5,8 @@
     column-gap: 2.4rem;
     margin-bottom: 2.8rem;
     @media screen and (max-width: 576px) {
-        display: block;
-        margin-bottom: 0;
+      display: block;
+      margin-bottom: 0;
     }
   }
   &__wrap .form__group {
@@ -38,8 +38,14 @@
     border: 1px solid #c1c1c1;
     border-radius: 5.4rem;
     @media screen and (max-width: 576px) {
-        margin-bottom: 3rem;
+      margin-bottom: 3rem;
     }
+  }
+  input[type="text"]::placeholder,
+  input[type="email"]::placeholder,
+  input[type="tel"]::placeholder,
+  textarea::placeholder {
+    color: #a9a9a9;
   }
   textarea {
     padding: 2rem 3.3rem;
