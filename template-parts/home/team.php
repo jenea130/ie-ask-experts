@@ -11,7 +11,7 @@ $button_text = $team['button_text'];
     <div class="team__content">
       <div class="team__label label"><?php echo $label; ?></div>
       <h2 class="team__title title"><?php echo $title; ?></h2>
-      <a class="team__btn btn btn--accent" href="/team.html"><?php echo $button_text; ?></a>
+      <a class="team__btn btn btn--accent" href="<?php echo get_the_permalink(392); ?>"><?php echo $button_text; ?></a>
     </div>
   </div>
 </div>

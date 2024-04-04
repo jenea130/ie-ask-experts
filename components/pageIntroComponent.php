@@ -10,7 +10,7 @@ $label = $page_intro['label'];
 $title = $page_intro['title'];
 $image = $page_intro['image'];
 ?>
-  <div class="page-intro">
+  <div class="page-intro <?php echo $class; ?>">
     <img class="page-intro__img" src="<?php echo $image ?>" alt="">
     <div class="container">
       <div class="page-intro__content">
