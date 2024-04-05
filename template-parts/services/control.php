@@ -21,14 +21,13 @@ $posts = new WP_Query([
           <?php
           $title = get_the_title();
           $excerpt = get_the_excerpt();
-          $for_loop = get_field('for_loop');
-          $icon = $for_loop['icon'];
+          $logo = get_field('logo');
           $permalink = get_the_permalink();
           ?>
           <a class="control__card" href="<?php echo $permalink; ?>">
             <div class="control__item">
               <div class="control__icon">
-                <?php echo $icon; ?>
+                <?php echo $logo; ?>
               </div>
               <div class="control__body">
                 <h3 class="control__subtitle subtitle"><?php echo $title; ?></h3>
