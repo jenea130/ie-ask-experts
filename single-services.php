@@ -84,56 +84,13 @@ pageIntroComponent($page_intro, 'page-intro--single-service');
     </div>
   </div>
   <div class="container">
-  <?php get_template_part('template-parts/single-services/expect'); ?>
+    <?php get_template_part('template-parts/single-services/expect'); ?>
   </div>
   <?php get_template_part('template-parts/single-services/brands-light'); ?>
   <?php get_template_part('template-parts/single-services/our-history'); ?>
   <div class="container">
-  <?php get_template_part('template-parts/single-services/gallery'); ?>
-    <div class="faq">
-      <div class="faq__header">
-        <div class="label">Faq </div>
-        <h2 class="faq__title title">Customer Questions</h2>
-      </div>
-      <div class="faq__accordion accordion">
-        <div class="accordion__item active">
-          <h3 class="accordion__subtitle">What will happen when I’ve sent my application?</h3>
-          <div class="accordion__body">
-            <div class="accordion__text text">Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <h3 class="accordion__subtitle">Can I get a free trial before I purchase?</h3>
-          <div class="accordion__body">
-            <div class="accordion__text text">Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <h3 class="accordion__subtitle">What should I include in my personal statement?</h3>
-          <div class="accordion__body">
-            <div class="accordion__text text">Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <h3 class="accordion__subtitle">Will membership plans be charged automatically?</h3>
-          <div class="accordion__body">
-            <div class="accordion__text text">Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <h3 class="accordion__subtitle">What will happen when I’ve sent my application?</h3>
-          <div class="accordion__body">
-            <div class="accordion__text text">Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</div>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <h3 class="accordion__subtitle">Can I get a free trial before I purchase?</h3>
-          <div class="accordion__body">
-            <div class="accordion__text text">Ippsum is the result of synergy between our teams and our customers. Our company culture is focused on excellent productivity, customer satisfaction, respect for team and individual achievements.</div>
-          </div>
-        </div>
-      </div>
-    </div>
+    <?php get_template_part('template-parts/single-services/gallery'); ?>
   </div>
+  <?php get_template_part('template-parts/single-services/faq'); ?>
 
   <?php get_footer(); ?>

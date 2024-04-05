@@ -30,11 +30,9 @@
       transform: translateY(-50%);
       width: 2rem;
       height: 2rem;
-      background: url("../i/svg/icon-plus.svg") no-repeat center;
     }
     &.active::after {
       height: 0.2rem;
-      background: url("../i/svg/icon-minus.svg") no-repeat;
     }
   }
   &__body {

@@ -117,3 +117,11 @@ Version: 0.4
 .expect__desc::before {
     background: url("assets/i/svg/icon-list.svg") no-repeat;
 }
+
+.accordion__subtitle::after {
+    background: url("assets/i/svg/icon-plus.svg") no-repeat center;
+}
+
+.accordion__subtitle.active::after {
+    background: url("assets/i/svg/icon-minus.svg") no-repeat;
+}
