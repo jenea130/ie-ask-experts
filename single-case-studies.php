@@ -1,14 +1,10 @@
 <?php get_header(); ?>
 
-<div class="page-intro page-intro--single-case">
-  <img class="page-intro__img" src="assets/i/page-intro/single-case-intro.jpg" alt="">
-  <div class="container">
-    <div class="page-intro__content">
-      <div class="label">Case Studies single</div>
-      <h1 class="page-intro__title">Taxes &amp; Efficiency</h1>
-    </div>
-  </div>
-</div>
+<?php
+$page_intro = get_field('page_intro');
+pageIntroComponent($page_intro, 'page-intro--single-case');
+?>
+
 <div class="container">
   <div class="preview">
     <div class="preview__img"> 
