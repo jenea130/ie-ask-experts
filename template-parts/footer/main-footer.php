@@ -80,7 +80,7 @@ $copyright = $footer['copyright'];
       </div>
     </div>
     <div class="main-footer__copyright footer-copyright">
-      <div class="footer-copyright__col"><?php echo $copyright; ?></div>
+      <div class="footer-copyright__col">&copy;<?php echo current_time('Y'); ?>&nbsp;<?php echo $copyright; ?></div>
       <div class="footer-copyright__col">
         <a href="<?php echo get_the_permalink(254); ?>" target="_blank"><?php echo get_the_title(254); ?></a>
       </div>
