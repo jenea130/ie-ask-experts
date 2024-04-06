@@ -70,7 +70,7 @@
             'depth'           => 0,
             'walker'          => '',
           ]); ?>
-          <a class="btn-icon btn-icon--mobile" href="tel:<?php echo clear_phone($phone); ?>" target="_blank">
+          <a class="btn-icon btn-icon--mobile" href="tel:<?php echo clear_phone($phone_number); ?>" target="_blank">
             <?php get_template_part('template-parts/icons/icon-phone'); ?>
             <span><?php echo $phone_number; ?></span>
           </a>

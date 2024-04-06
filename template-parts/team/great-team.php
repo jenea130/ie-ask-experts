@@ -32,8 +32,7 @@ $button_text = $great_team['button_text'];
         $term_name = $cur_terms[0]->name;
         ?>
         <div class="our-team__card">
-          <a class="our-team__img" href="/single-team.html">
-
+          <a class="our-team__img" href="<?php echo $permalink; ?>">
             <img src="<?php echo $image; ?>" alt="">
             <span class="our-team__spec"><?php echo $term_name; ?></span>
           </a>

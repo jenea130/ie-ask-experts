@@ -2,7 +2,7 @@
 $footer = get_field('footer', 'option');
 $logo = $footer['logo'];
 $image = $footer['image'];
-$text = $footer['text'];
+// $text = $footer['text'];
 $socials = $footer['socials'];
 $title_1 = $footer['title_1'];
 $title_2 = $footer['title_2'];
