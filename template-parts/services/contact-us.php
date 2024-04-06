@@ -1,5 +1,5 @@
 <?php
-$contact_us = get_field('contact_us');
+$contact_us = get_field('contact_us', 28);
 $label = $contact_us['label'];
 $title = $contact_us['title'];
 $text = $contact_us['text'];
