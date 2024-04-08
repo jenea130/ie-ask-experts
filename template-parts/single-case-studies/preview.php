@@ -4,7 +4,7 @@ $image = $preview['image'];
 $button_text = $preview['button_text'];
 $post = get_post(get_the_ID());
 $title = $post->post_title;
-$term = get_terms('category-case-studies', get_the_ID())[0]->name;
+$term = get_the_terms(get_the_ID(), 'category-case-studies')[0]->name;
 ?>
 <div class="preview">
   <div class="preview__img">
