@@ -35,6 +35,8 @@ $blog = new WP_Query([
           $excerpt = get_the_excerpt();
           $image = get_the_post_thumbnail_url();
           $permalink = get_the_permalink();
+          $term = get_the_terms(get_the_ID(), 'author_custom')[0];
+          $picture = get_field('image', $term);
           ?>
           <div class="articles__item">
             <div class="articles__img">
@@ -45,9 +47,10 @@ $blog = new WP_Query([
             <footer class="articles__footer">
               <div class="articles__info">
                 <div class="articles__ava">
-                  <img src="assets/i/articles/ava-1.jpg" alt="">
+                  
+                  <img src="<?php echo $picture; ?>" alt="">
                 </div>
-                <span class="articles__name text">John Carter</span>
+                <span class="articles__name text"><?php echo $term->name; ?></span>
                 <span class="articles__date text"><?php echo the_time('F j, Y'); ?></span>
               </div>
               <a class="articles__link btn" href="<?php echo $permalink; ?>">Read More</a>
