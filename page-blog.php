@@ -6,6 +6,11 @@ pageIntroComponent($page_intro, 'page-intro-blog');
 ?>
 
 <?php
+$articles = get_field('articles');
+$label = $articles['label'];
+$title = $articles['title'];
+$button_text = $articles['button_text'];
+
 $blog = new WP_Query([
   'post_type' => 'post',
   'posts_per_page' => -1,
@@ -16,10 +21,10 @@ $blog = new WP_Query([
   <div class="articles">
     <header class="articles__header">
       <div class="articles__content">
-        <div class="label">Blog</div>
-        <h2 class="articles__title title">Take a look at our latest articles & resources</h2>
+        <div class="label"><?php echo $label; ?></div>
+        <h2 class="articles__title title"><?php echo $title; ?></h2>
       </div>
-      <a class="articles__btn btn btn--accent">More News</a>
+      <a class="articles__btn btn btn--accent"><?php echo $button_text; ?></a>
     </header>
     <div class="articles__wrapper">
       <?php if ($blog->have_posts()) : ?>
