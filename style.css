@@ -162,6 +162,10 @@ Version: 0.4
     color: #595566;
 }
 
+.consulting ol {
+    padding-left: 1.4rem;
+}
+
 .consulting ul li {
     position: relative;
     padding-left: 2rem;

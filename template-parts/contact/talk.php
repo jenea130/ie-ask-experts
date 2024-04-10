@@ -28,6 +28,7 @@ $items = $talk['items'];
           $label = $item['label'];
           $type = $item['type'];
           $text = $item['text'];
+          $url = $item['url'];
           ?>
           <div class="talk__item">
             <div class="talk__logo">
@@ -35,12 +36,13 @@ $items = $talk['items'];
             </div>
             <div class="talk__info">
               <span class="text"><?php echo $label; ?></span>
+
               <?php if ($type === 'phone') : ?>
                 <a class="talk__phone" href="tel:<?php echo clear_phone($text); ?>" target="_blank">Free <?php echo $text; ?></a>
               <?php elseif ($type === 'email') : ?>
                 <a class="talk__email" href="mailto:<?php echo $text; ?>" target="_blank"><?php echo $text; ?></a>
               <?php else : ?>
-                <a class="talk__address" href="#"><?php echo $text; ?></a>
+                <a class="talk__address" href="<?php echo $url; ?>" target="_blank"><?php echo $text; ?></a>
               <?php endif; ?>
             </div>
           </div>
