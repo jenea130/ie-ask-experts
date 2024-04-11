@@ -97,7 +97,7 @@
   }
   &__item {
     display: flex;
-    align-items: center;
+    // align-items: center;
     column-gap: 2rem;
     margin-bottom: 1.5rem;
   }
@@ -106,8 +106,8 @@
   }
   &__logo {
     svg {
-      //   height: 5rem;
-      //   width: 5rem;
+        // height: 5rem;
+        // width: 5rem;
     }
   }
   &__info {

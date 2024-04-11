@@ -14,6 +14,8 @@
   <li class="consulting__item">Interactively procrastinate high-payoff content</li>
   <li class="consulting__item">Credibly reinter mediate backend ideas for cross-platform models</li>
 </ul>
+
+
 <div class="consulting__cite">
   <div class="consulting__dotted">
     <?php get_template_part('template-parts/icons/fon-consulting'); ?>
@@ -26,6 +28,8 @@
   </div>
   <div class="consulting__subtext">“The job market of the future will consist of those jobs that robots cannot perform. Our blue-collar work is pattern recognition, making sense of what you see. Gardeners will still have jobs because every garden is different.”</div>
 </div>
+
+
 <div class="consulting__block">
   <h2 class="consulting__title">Make real time a wireframes services</h2>
   <div class="consulting__text text">Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.</div>
