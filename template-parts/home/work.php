@@ -11,7 +11,7 @@ $image = $work['image'];
     <div class="work__label label"><?php echo $label; ?></div>
     <div class="work__header">
       <h2 class="work__title title"><?php echo $title; ?></h2>
-      <a class="work__btn btn" href="#"><?php echo $button_text; ?></a>
+      <a class="work__btn btn" href="<?php echo get_the_permalink(30); ?>#js-taxes"><?php echo $button_text; ?></a>
     </div>
     <div class="work__grid">
       <?php
