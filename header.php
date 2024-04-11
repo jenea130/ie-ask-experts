@@ -49,7 +49,7 @@
     <header class="main-header">
       <div class="container">
         <div class="main-header__wrapper">
-          <a class="main-header__logo" href="#">
+          <a class="main-header__logo" href="<?php echo home_url(); ?>">
             <?php echo $logo; ?>
           </a>
           <?php wp_nav_menu([

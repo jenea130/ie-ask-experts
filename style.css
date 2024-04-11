@@ -182,3 +182,11 @@ Version: 0.4
         border-radius: 50%;
     }
 }
+
+li.current-menu-item a {
+    color: var(--contrast);
+}
+
+li.current-menu-item a::before {
+    background: var(--contrast);
+}

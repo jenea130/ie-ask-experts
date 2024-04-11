@@ -30,4 +30,5 @@ window.addEventListener("DOMContentLoaded", function () {
   if (mainMenu) {
     toggleMenu();
   }
+
 });
