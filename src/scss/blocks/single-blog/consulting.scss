@@ -99,13 +99,15 @@
     position: relative;
     max-width: 74%;
     margin: 0 auto;
-    font-family: var(--font-2);
-    font-weight: 400;
-    font-size: 3.2rem;
-    line-height: 1.4;
-    text-align: center;
-    color: #fff;
     z-index: 3;
+    p {
+      font-family: var(--font-2);
+      font-weight: 400;
+      font-size: 3.2rem;
+      line-height: 1.4;
+      text-align: center;
+      color: #fff;
+    }
   }
   &__list-1 {
     margin-bottom: 3.6rem;
