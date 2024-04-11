@@ -1,8 +1,7 @@
 <?php get_header(); ?>
 
 <?php 
-$not_found = get_field('not_found');
-vardump($not_found);
+$not_found = get_field('not_found', 633);
 $title = $not_found['title'];
 $subtitle = $not_found['subtitle'];
 $text = $not_found['text'];
