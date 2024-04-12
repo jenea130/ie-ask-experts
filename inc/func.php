@@ -163,7 +163,7 @@ function true_remove_default_sizes($sizes)
 }
 function remove_pages_editor()
 {
-	$ids = [8, 2, 26, 28, 392, 30, 32, 34, 633, 254];
+	$ids = [8, 2, 26, 28, 392, 30, 32, 34, 633];
 	if (in_array(get_the_ID(), $ids)) {
 		remove_post_type_support('page', 'editor');
 	} // end if

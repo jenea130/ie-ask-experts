@@ -15,7 +15,7 @@ $terms = get_terms([
 $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
 $posts = new WP_Query([
   'post_type' => 'case-studies',
-  'posts_per_page' => 6,
+  'posts_per_page' => 3,
   'tax_query' => $tax_query,
   'paged'          => $paged,
 ]);

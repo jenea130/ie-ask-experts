@@ -25,47 +25,14 @@ pageIntroComponent($page_intro, 'page-intro--licenses');
           <p>All images used in the PrimeChat Webflow Template are licensed for free personal and commercial use. If you'd like to use any specific image, you can check the licenses and download the images for free on</p>
           <h4 class="all-licenses__subtitle">Pexels :</h4>
           <span class="all-licenses__desc">&nbsp;Licenses</span>
-          <ul class="all-licenses__list">
-            <li> <a href="#">Image 1,</a></li>
-            <li> <a href="#">Image 2,</a></li>
-            <li> <a href="#">Image 3,</a></li>
-            <li> <a href="#">Image 4,</a></li>
-            <li> <a href="#">Image 5,</a></li>
-            <li> <a href="#">Image 6,</a></li>
-            <li> <a href="#">Image 7,</a></li>
-            <li> <a href="#">Image 8,</a></li>
-            <li> <a href="#">Image 9,</a></li>
-            <li> <a href="#">Image 10,</a></li>
-            <li> <a href="#">Image 11,</a></li>
-            <li> <a href="#">Image 12,</a></li>
-            <li> <a href="#">Image 13,</a></li>
-            <li> <a href="#">Image 14,</a></li>
-            <li> <a href="#">Image 15,</a></li>
-            <li> <a href="#">Image 16,</a></li>
-            <li> <a href="#">Image 17,</a></li>
-            <li> <a href="#">Image 18,</a></li>
-            <li> <a href="#">Image 19,</a></li>
-            <li> <a href="#">Image 20,</a></li>
-            <li> <a href="#">Image 21,</a></li>
-            <li> <a href="#">Image 22,</a></li>
-            <li> <a href="#">Image 23,</a></li>
-            <li> <a href="#">Image 24,</a></li>
-            <li> <a href="#">Image 25,</a></li>
-          </ul>
+          <div class="all-licenses__text text">
+            Image 1, Image 2, Image 3, Image 4, Image 5, Image 6, Image 7, Image 8, Image 9, Image 10, Image 11, Image 12, Image 13, Image 14, Image 15, Image 16, Image 17, Image 18, Image 19, Image 20, Image 21, Image 22, Image 23, Image 24, Image 25
+          </div>
           <h4 class="all-licenses__subtitle">Unsplash :</h4>
           <span class="all-licenses__desc">&nbsp;Licenses</span>
-          <ul class="all-licenses__list">
-            <li> <a href="#">Image 1,</a></li>
-            <li> <a href="#">Image 2,</a></li>
-            <li> <a href="#">Image 3,</a></li>
-            <li> <a href="#">Image 4,</a></li>
-            <li> <a href="#">Image 5,</a></li>
-            <li> <a href="#">Image 6,</a></li>
-            <li> <a href="#">Image 7,</a></li>
-            <li> <a href="#">Image 8,</a></li>
-            <li> <a href="#">Image 9,</a></li>
-            <li> <a href="#">Image 10,</a></li>
-          </ul>
+          <div class="all-licenses__text text">
+            Image 1, Image 2, Image 3, Image 4, Image 5, Image 6, Image 7, Image 8, Image 9, Image 10
+          </div>
         </div>
       </div>
     </div>
