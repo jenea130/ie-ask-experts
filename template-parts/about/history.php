@@ -26,4 +26,3 @@ $image = $history['image'];
     </div>
   </div>
 </div>
-</div>

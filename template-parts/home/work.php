@@ -39,7 +39,7 @@ $image = $work['image'];
           <div class="work__item">
             <img src="<?php echo $image; ?>" alt="">
             <div class="work__wrap">
-              <a href="#" class="work__icon">
+              <a href="<?php echo $permalink; ?>" class="work__icon">
                 <?php get_template_part('template-parts/icons/icon-plus'); ?>
               </a>
               <div class="work__info">
